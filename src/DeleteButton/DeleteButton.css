@@ -1,0 +1,17 @@
+.remove-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  background-image: url("/src/assets/basket.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.img-basket {
+  width: 40px;
+  height: 40px;
+}

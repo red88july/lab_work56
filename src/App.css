@@ -19,6 +19,7 @@
 .box-items {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
   align-content: space-between;
 }
@@ -26,7 +27,7 @@
 .ingridients-box,
 .visualizer-burger-box {
   width: 450px;
-  height: 150px;
+  height: auto;
   border: 2px solid #000000;
   border-radius: 10px;
 }

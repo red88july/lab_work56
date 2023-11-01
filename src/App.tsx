@@ -1,8 +1,8 @@
 import './App.css';
+// import DeleteButton from './DeleteButton/DeleteButton';
+
 
 function App() {
-
-
 
     return (
       <div className='main-box'>
@@ -11,6 +11,7 @@ function App() {
 
           <div className='ingridients-box'>
             <span>Ingridients</span>
+           {/*<DeleteButton image={''} />*/}
 
           </div>
 
