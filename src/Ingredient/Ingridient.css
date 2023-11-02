@@ -1,0 +1,17 @@
+.elements-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ingr-btn {
+  display: inline-block;
+  border: transparent;
+  background-color: #FFFFFF;
+}
+
+.ingr-img {
+  display: inline-flex;
+  width: 85px;
+  height: 85px;
+}

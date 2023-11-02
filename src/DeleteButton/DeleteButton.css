@@ -15,3 +15,8 @@
   width: 40px;
   height: 40px;
 }
+
+.remove-btn:hover {
+  outline: 2px solid #000000;
+  box-shadow: 0 0 20px -3px rgba(162, 162, 169, 1);
+}

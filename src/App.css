@@ -26,6 +26,7 @@
 
 .ingridients-box,
 .visualizer-burger-box {
+  padding: 10px;
   width: 450px;
   height: auto;
   border: 2px solid #000000;
@@ -36,4 +37,18 @@
 .visualizer-burger-box:hover {
   border: 2px solid rgba(182, 178, 178, 0.7);
   box-shadow: 0 0 26px 5px rgba(0,0,0,0.1);
+}
+
+.ingridients-items {
+  margin-top: 40px;
+}
+
+.ingridients-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn-container {
+  display: flex;
 }
