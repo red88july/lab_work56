@@ -94,9 +94,14 @@ function App() {
         </div>
         <div className='visualizer-burger-box'>
           <span>Burger</span>
-          {elements.map((element) => (
-            <Burger count={element.count} />
-          ))}
+          <Burger
+            count={
+              (elements.find((element) => element.name === 'Meat')?.count || 0) +
+              (elements.find((element) => element.name === 'Cheese')?.count || 0) +
+              (elements.find((element) => element.name === 'Bacon')?.count || 0) +
+              (elements.find((element) => element.name === 'Salat')?.count || 0)
+            }
+          />
           <span>Total price: {totalPrice} </span>
         </div>
       </div>
