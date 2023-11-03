@@ -3,11 +3,12 @@ import React from 'react';
 
 interface Basket {
   image: string,
+  onClickChange: () => void;
 }
 
-const DeleteButton: React.FC<Basket> = () => {
+const DeleteButton: React.FC<Basket> = (props) => {
   return (
-    <button className='remove-btn' type='button'></button>
+    <button className='remove-btn' type='button' onClick={props.onClickChange}></button>
   );
 };
 

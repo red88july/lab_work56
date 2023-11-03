@@ -5,3 +5,7 @@ export interface IngridientsButton {
   count: number,
   onClick: () => void;
 }
+
+export interface Burger {
+  count: number,
+}
