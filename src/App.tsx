@@ -7,7 +7,7 @@ import {useState} from 'react';
 
 function App() {
 
-  const [ingredientsData, setIngredientsData] = useState([
+  const [elements, setElements] = useState([
     {name: 'Meat', count: 0},
     {name: 'Cheese', count: 0},
     {name: 'Salat', count: 0},
@@ -15,11 +15,11 @@ function App() {
   ]);
 
   const onClickIngredients = (index: number) => {
-    const incridientCount = {...ingredientsData[index]};
+    const incridientCount = {...elements[index]};
     incridientCount.count++;
-    const  incridientCountCopy = [...ingredientsData];
+    const  incridientCountCopy = [...elements];
     incridientCountCopy[index] = incridientCount;
-    setIngredientsData(incridientCountCopy);
+    setElements(incridientCountCopy);
   };
 
     return (
@@ -37,10 +37,10 @@ function App() {
                       price={ingredient.price}
                       image={ingredient.image}
                       onClick={() => onClickIngredients(index)}
-                      count={ingredientsData[index].count}
+                      count={elements[index].count}
                     />
                     <span>{ingredient.name}</span>
-                    <span>x {ingredientsData[index].count}</span>
+                    <span>x {elements[index].count}</span>
                     <DeleteButton image={''}/>
                   </div>
                 ))}
